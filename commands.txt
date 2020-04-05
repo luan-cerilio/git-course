@@ -1,0 +1,115 @@
+git config --global user.name <name>
+- set username
+
+git config --global user.email <email>
+- set user email
+
+git init
+- creates a new repository in the current directory
+
+git status
+- show the status of repository
+
+git add <file.extension>
+- send specific file to stage area
+
+git add .extension
+- send all .extension files to stage area
+
+git add .
+- send all files to stage area
+
+git commit -m <message to idenfity commit>
+- send changes in stage area to git directory
+
+git commit -a -m <message to idenfity commit>
+- send changes in workspace direct to git directory
+
+git diff
+- show changes in workspace
+
+git diff --staged
+- show changes in stage area
+
+git log
+- show commit history (simple version)
+
+git log -p
+- show commit history (with changes, like diff)
+- press enter to walk in to changes
+- when (END) appears, press "q"
+
+git log -p -<n>
+- show commit history of last n commits
+
+git log --pretty=online
+- shows commit key and message only
+
+git commit --amend -m <message to identify commit>
+- edits the last commit, adding the changes
+
+git reset HEAD <file>
+- remove file from stage area
+
+git checkout -- <file>
+- discard changes in working directory
+
+git rm <file>
+- when a file is deleted in workspace and you want to confirm the delete activity in stage area
+
+git tag
+- show all tags
+
+git tag -a <tag version> -m <message>
+- creates a tag with some info: author, date, etc...
+
+git tag -a <tag version> <commit key> -m <message>
+- creates a tag in a specific commit
+
+git show <tag version>
+- show tag info
+
+git checkout <tag version>
+- changes the branch to that tag version
+
+git checkout <branch name>
+- goes to a branch
+
+git tag -d <tag version>
+- deletes a tag
+
+git branch <branch name>
+- creates a branch
+
+git checkout -b <branch name>
+- creates and goes to a branch
+
+git merge <branch name>
+- merges a branch to the current branch that you are working
+
+git branch
+- lists all branches
+
+git branch -d <branch name>
+- deletes a branch
+
+git init --bare
+- initializes a repository in a server, to share the project
+
+git clone file:////<remote server name> <project name>
+- does a clone to the server
+
+git remote
+- name of remote server (default: origin)
+
+git push <remote server name> <branch name>
+- send files in the <branch name> to the remote server
+
+git pull <remote server name> <branch name>
+- brings the files from server and merge with your files in development
+
+git fetch <remote server name> <branch name>
+- brings the files from server but no merge with your files in development
+
+ssh-keygen
+- generates a ssh key for authentication
